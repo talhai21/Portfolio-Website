@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Talha I - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="TI.jpeg" alt="Chuka Coding Logo" class="header-logo">
+            </div>
+            <ul>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#work">Projects</a></li>
+            </ul><div class="social-icons">
+                <a href="https://www.linkedin.com/in/talha-inam" target="_blank" title="LinkedIn Profile">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://github.com/talhai21" target="_blank" title="GitHub">
+                    <i class="fab fa-github"></i>
+                </a>
+            </div>
+            
+        </nav>
+    </header>
+
+    <section id="home">
+        <div class="container">
+            <h1>Hello, I'm Talha</h1>
+            <p> Computer Science (BSc) at Wilfrid Laurier University | Full Stack Developer | Mobile & Smart Living Advisor | Apple Champion </p>
+        </div>
+    </section>
+
+    <section id="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>A first-year Computer Science student at Wilfrid Laurier University with a passion for technology, innovation, and problem-solving. My academic foundation includes a strong performance in data structures, algorithms, and programming, complemented by my advanced proficiency in languages like Python, Java, and Swift. My hands-on experience ranges from developing user-friendly apps, such as an Ontario Financial Literacy app and a currency converter, to crafting a responsive portfolio website showcasing my projects and achievements.
+
+                        Professionally, I excel in customer service and technology sales, leveraging multilingual communication skills (English, Pashto, Urdu, Hindi) to connect with diverse audiences. My roles at Best Buy and as an Apple Champion have honed my ability to solve complex challenges, train teams, and enhance customer satisfaction. Recognized for my dedication, flexibility, and eagerness to grow, I bring a proactive and adaptable mindset to every endeavor.
+                        
+                        Whether collaborating on innovative projects or engaging with customers, I am driven by a commitment to excellence and continuous learning.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-card" data-skill="HTML">
+                    <i class="fab fa-html5"></i>
+                    <span>HTML</span>
+                </div>
+                <div class="skill-card" data-skill="CSS">
+                    <i class="fab fa-css3-alt"></i>
+                    <span>CSS</span>
+                </div>
+                <div class="skill-card" data-skill="JavaScript">
+                    <i class="fab fa-js"></i>
+                    <span>JavaScript</span>
+                </div>
+                <div class="skill-card" data-skill="Java">
+                    <i class="fab fa-java"></i>
+                    <span>Java</span>
+                </div>
+                <div class="skill-card" data-skill="Python">
+                    <i class="fab fa-python"></i>
+                    <span>Python</span>
+                </div>
+                <div class="skill-card" data-skill="SwiftUI">
+                    <i class="fab fa-swift"></i>
+                    <span>SwiftUI</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <h3>Currency Converter App</h3>
+                    <div class="slideshow-container">
+                        <div class="slides cc-slides">
+                            <img src="CCH.PNG" alt="Currency Converter Home">
+                            <img src="CC1.PNG" alt="Currency Converter Screen 1">
+                            <img src="CC2.PNG" alt="Currency Converter Screen 2">
+                            <img src="CC3.PNG" alt="Currency Converter Screen 3">
+                            <img src="CC4.PNG" alt="Currency Converter Screen 4">
+                        </div>
+                        <button class="slide-btn prev" onclick="changeSlide(-1, 'cc')">❮</button>
+                        <button class="slide-btn next" onclick="changeSlide(1, 'cc')">❯</button>
+                        <div class="slide-dots cc-dots"></div>
+                    </div>
+                    <p>SwiftUI-based application with intuitive user interface design for real-time currency conversions.</p>
+                    <p class="status">Coming soon to App Store</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Ontario Financial Literacy App</h3>
+                    <div class="slideshow-container">
+                        <div class="slides fl-slides">
+                            <img src="FLQHP.PNG" alt="Financial Literacy Home">
+                            <img src="FLQ1.PNG" alt="Financial Literacy Screen 1">
+                            <img src="FLQ2.PNG" alt="Financial Literacy Screen 2">
+                        </div>
+                        <button class="slide-btn prev" onclick="changeSlide(-1, 'fl')">❮</button>
+                        <button class="slide-btn next" onclick="changeSlide(1, 'fl')">❯</button>
+                        <div class="slide-dots fl-dots"></div>
+                    </div>
+                    <p>SwiftUI-based application with intuitive user interface design to help students prepare for Ontario Financial Literacy Test.</p>
+                    <p class="status">Coming soon to App Store</p>
+                </div>
+                
+                <div class="project-card">
+                    <h3>Ontario Financial Literacy Website</h3>
+                    <p>HTML, CSS, Javascript based website with a clean interface to help students study for financial literacy.</p>
+                    <a href="https://ontarioliteracytest.netlify.app/" target="_blank" class="project-link">Visit Website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Talha I. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
